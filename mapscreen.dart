@@ -32,7 +32,7 @@ class _MapScreenState extends State<MapScreen> {
       });
       
       final url = Uri.parse(
-          "https://api.geoapify.com/v1/routing?waypoints=${startPoint.latitude},${startPoint.longitude}|${endPoint.latitude},${endPoint.longitude}&mode=drive&apiKey=0e282626fc294a49825cf636f46c74aa");
+          "https://api.geoapify.com/v1/routing?waypoints=${startPoint.latitude},${startPoint.longitude}|${endPoint.latitude},${endPoint.longitude}&mode=drive&apiKey=your_api_key");
       final response = await http.get(url);
       if (response.statusCode == 200) {
         final resData = json.decode(response.body);
