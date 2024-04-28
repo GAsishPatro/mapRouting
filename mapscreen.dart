@@ -15,13 +15,13 @@ class MapScreen extends StatefulWidget {
 class _MapScreenState extends State<MapScreen> {
   List listOfPoints = [];
   List<LatLng> points = [];
-  final List<LatLng> dummyCoordinates = [
-    const LatLng(6.145332, 1.2433),
-    const LatLng(6.125231, 1.216),
-    const LatLng(6.135231, 1.316)
+   final List<LatLng> dummyCoordinates = [
+    const LatLng(19.157428,72.9959931),
+    const LatLng(19.18196,72.9893241),
+    const LatLng(19.190958,72.9830221)
   ];
-  LatLng startPoint = const LatLng(6.145332, 1.2433);
-  LatLng endPoint = const LatLng(6.125231, 1.216);
+  LatLng startPoint = const LatLng(19.157428,72.9959931);
+  LatLng endPoint = const LatLng(19.18196,72.9893241);
 
   getCoordinates() async {
     for (int i = 0; i < dummyCoordinates.length - 1; i++) {
